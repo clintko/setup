@@ -1,0 +1,67 @@
+---
+title: "setup_R"
+author: "Clintko"
+date: "9/14/2018"
+output: html_document
+---
+
+[jupyter r kernel](https://www.datacamp.com/community/blog/jupyter-notebook-r)
+```{r}
+install.packages(c('repr', 'IRdisplay', 'evaluate', 'crayon', 'pbdZMQ', 'devtools', 'uuid', 'digest'))
+devtools::install_github('IRkernel/IRkernel')
+
+### execute this under command line R
+IRkernel::installspec()
+```
+
+
+```{r}
+### Packages from CRAN
+## main analysis tools
+install.packages("devtools")
+
+# sudo apt-get install libxml2-dev
+install.packages("tidyverse")
+
+install.packages("shiny")
+
+## plotting
+install.packages("RColorBrewer")
+install.packages("pheatmap")
+install.packages("corrplot")
+install.packages("gridExtra")
+install.packages("GGally")
+
+install.packages("psych")
+install.packages("scales")
+
+### Bioconductor
+## try http:// if https:// URLs are not supported
+source("https://bioconductor.org/biocLite.R")
+biocLite()
+biocLite("DESeq2")
+biocLite("multtest")
+biocLite("golubEsets")
+biocLite("genefilter")
+```
+
+
+
+```{r}
+### Bioconductor
+## try http:// if https:// URLs are not supported
+source("https://bioconductor.org/biocLite.R")
+biocLite()
+biocLite("DESeq2")
+biocLite("multtest")
+biocLite("golubEsets")
+biocLite("genefilter")
+```
+
+
+```{r}
+install.packages("ggvis")
+```
+
+
+
